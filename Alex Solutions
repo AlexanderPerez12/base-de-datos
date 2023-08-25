@@ -1,0 +1,29 @@
+/* Nombre: Jose Alexander Perez Ramirez Matricula: 21-EIIT-1-033 Seccion: 0541 */
+
+CREATE DATABASE ALEXSolutions;
+
+CREATE TABLE Comprador (
+   CompradorID int IDENTITY(1,1) PRIMARY KEY,
+   Nombre varchar(50) ,
+   Apellido varchar(50) ,
+   Edad varchar(100),
+   Direccion varchar(20),
+   Telefono varchar(100), UNIQUE
+);
+
+CREATE TABLE Factura (
+   FacturaId int IDENTITY(1,1) PRIMARY KEY,
+   Fecha varchar(50) NOT NULL,
+   CompradorId varchar(500) NOT NULL,
+   ProductoId decimal(10,3) NOT NULL
+   
+);
+
+CREATE TABLE Producto (
+   ProductoId int IDENTITY(1,1) PRIMARY KEY,
+   Codigo date NOT NULL,
+   Cantidad decimal(10,3) NOT NULL,
+   Precio int NOT NULL,
+   Garantia varchar(500) NOT NULL,
+  
+);
